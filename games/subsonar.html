@@ -46,8 +46,6 @@
 		
 		<p>The generation is definitely janky. What it does is basically divide the play area into chunks, then go over each chunk and decide if it wants to place an entity there. If it does, it also randomizes the location a bit in order to avoid just grids of entities. It does this first for obstacles, then enemies. It also spawns some deterministic landmarks like a line of obstacles or a square of obstacles. The size and rotation of these landmarks is randomized. Once everything has been generated, it checks if anything overlaps, if it does, then it deletes one of the overlapping entities and keeps checking chunks until all of them have been checked. The end result is a play area that isn't very clear, there's no real sense of direction, even with the added landmarks. Perlin noise or something similar would have been great, but not possible due to my skills and time limitations.</p>
 		
-		<p>More coming later, this page is a work in progress.</p>
-		
 		<div class = "article-grid-container">
 			<div class = "article-grid-text"></div>
 		</div>
