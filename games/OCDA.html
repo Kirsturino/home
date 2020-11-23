@@ -24,7 +24,37 @@
 	
 	<div class = "middle">
 		
-		<p>More coming later :)</p>
+		<p>OCDA represents a lot of things to me. In many ways, it’s a turning point for myself as a developer. It’s a point in which I started to take game feel and polish more seriously after making several games that worked but didn’t really feel that fun to play. Compared to my previous works, OCDA is bounds and leaps beyond everything I’ve made. Doesn’t mean it’s perfect or even great, but I really like it. I learned so much while making it and it helped me in figuring out what kind of games I really want to make in the future.</p>
+		<p>Aight, let’s get to the game, then.</p>
+		<p>Platformers, everyone makes them, no one plays them because there’s so many of them. Making a 2D platformer is as cliché as you can get. That being said, because they’re so easy to make and the formula is well established, you can really hone in on a specific aspect when making one. That’s why I chose to make a platformer in order to learn about game feel. And presumably that’s why a lot of practical tips and tricks that people like to share to improve your game’s feel are also directed towards platformers.</p>
+		<p>So a big part of developing OCDA was spent scouring the internet for these tricks to implement in the game. After I had implemented a bunch, I went back to see why they helped, what fundamentals I could break them down to, and finally come up with my own tricks to improve game feel. </p>
+		<p>In short, most tricks widen the input opportunity for the player to succeed in performing different verbs. This lessens the risk of players getting frustrated because they fail in doing things without knowing why. Sometimes these tricks simply cheat for the player in minor ways without the player noticing. It’s pretty important that the player doesn’t realize they are being favoured, though. They might feel that helping them cheapens the experience. When these tricks are added to the game well, players can pull off seemingly hard tricks without too much trouble. Most importantly, the game will present the players with a fail state only when the player has messed up in a colossal way, making it clear how the player failed.</p>
+		<p>For brevity’s sake, here’s a short list of tricks that are implemented in OCDA to help the player in their platforming:</p>
+		
+		<ul>
+			<li>Input buffering</li>
+				<ul>
+					<li>Jumping before actually landing</li>
+					<li>Jumping after dropping off a platform</li>
+					<li>Wall jumping before touching a wall</li>
+					<li>Wall jumping after touching a wall</li>
+					<li>Dashing before touching a dash zone</li>
+				</ul>
+			<li>Corner shaving/li>
+				<ul>
+					<li>Hitbox pinching/Sliding player when colliding with corners</li>
+					<li>Rounded hurtboxes</li>
+				</ul>
+
+			<li>Automatic ledge grabbing</li>
+		</ul>
+		
+		<p>These exist as invisible helpers for the player. Even the ledge grab is something that most players will not call out immediately when it happens for the first time. There might be more that I’ve forgotten, since this is written way after I finished OCDA, ahah. This is a good base for a platformer, though. Google all these terms and there will probably be a lot of good tutorials/articles about them.</p>
+		<p>Barring smoke and mirrors, some of the heavy lifting is also done by adjusting the different velocities of the player character. These include things like acceleration, friction, jump height, gravity etc. This is all pretty obvious stuff, but tuning those took a long time and is something that all platformer games absolutely need to nail. Most importantly, once these values are in a good place, you should note down the different values. Knowing these and (most importantly) measuring them in relation to the way you construct your levels will aid you in creating levels that the player can move around in smoothly. If your character can jump 4 blocks high, don’t make platforms that are placed 5 blocks above the player, make it 7 or 8 so the player knows clearly that they need several jumps to reach the platform. This applies to horizontal spaces as well, because you should know how far your character can jump in that direction as well.</p>
+		<p>Knowing these tricks and having well defined movement values for your player character that you know inside out will make your game a joy to play. It will also fasten your level making process, as you’ll know the inherent limits your player character’s attributes impose to level design.</p>
+		<p>The fascinating and eye-opening part of making this game was learning the fundamentals behind all this stuff. I’m excited to someday apply all of this knowledge to different genres of games. Think of how much these concepts could oil the combat of a hack and slash -type game! What tricks could be implemented to make players’ attacks register more often while helping them avoid enemy attacks without them necessarily noticing?</p>
+		<p>What sorts of values are the most important to tweak when making this kind of game? How can you design enemies that conform to the flow of your game’s combat? What would be equivalent to corner shaving in that type of game? Man, there’s just so many applications to things like this that I feel like aren’t talked about enough. We hear snippets and nuggets of knowledge over time from GDC talks and whatnot, but not enough of the fundamental design philosophies that those tricks are based on.</p>
+		<p>Wow, this really turned into a ramble about game feel… Sorry, I might have gotten carried away, haha! Hopefully it’s useful or interesting anyway.</p>
 		
 		<div class = "article-grid-container">
 			<div class = "article-grid-text"></div>

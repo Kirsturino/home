@@ -211,7 +211,7 @@ a.normal:hover, a.normal:active {
 }
 
 .middle {
-	padding: 20px;
+	padding: 0px;
 	grid-area: middle;
 	background-color: rgba(0, 0, 0, 0.4);
 	box-shadow: 0 5px rgba(0, 0, 0, 0.6);
