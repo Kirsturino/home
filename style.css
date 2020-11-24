@@ -190,7 +190,7 @@ a.normal:hover, a.normal:active {
 	'left bottom';
 	grid-template-columns: 20vw auto 20vw;
 	grid-column-gap: 10px;
-	grid-row-gap: 20px;
+	grid-row-gap: 60px;
 }
 
 .header {
