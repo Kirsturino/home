@@ -20,6 +20,7 @@ h1 {
 }
 
 h2 {
+	text-align: center;
 	color: #ffa525;
 	font-family: 'Raleway', sans-serif;
 	font-size: 2em;
@@ -159,14 +160,14 @@ a.normal:hover, a.normal:active {
 	display: grid;
 	grid-template-areas:
     'picture text';
-	grid-template-columns: 20vw 40vw;
+	grid-template-columns: 15vw auto;
 	grid-column-gap: 10px;
 	box-shadow: 0 5px rgba(0, 0, 0, 0.4);
 }
 
 .article-grid-picture {
 	grid-area: picture;
-	padding: 10px;
+	padding: 20px;
 	place-self: center;
 }
 
@@ -188,7 +189,7 @@ a.normal:hover, a.normal:active {
     'empty header' 
     'left middle'
 	'left bottom';
-	grid-template-columns: 20vw auto 20vw;
+	grid-template-columns: 30vw 40vw auto;
 	grid-column-gap: 10px;
 	grid-row-gap: 60px;
 }
