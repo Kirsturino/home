@@ -1,69 +1,103 @@
-
 <!DOCTYPE html>
 <html>
-<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"> 
 <link rel="shortcut icon" href="../favicon.ico"/>
 <head>
-<title>Company of Crime</title>
-<link rel = "stylesheet" href = "../style.css">
+	<title>Kirstu</title>
+	<link id="pagestyle" rel="stylesheet" type="text/css" href="../style.css">
 </head>
+<body>
+	<div id="topnav">
+	  <a href="../index.html" class="active">kirstu</a>
+	  <div id="links">
+		<a href="../me.html">bio</a>
+		<a href="../index.html">portfolio</a>
+		<a href="../writing.html">blog</a>
+	  </div>
+	  
+	  <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+		<i class="fa fa-bars"></i>
+	  </a>
+	</div>
+	
+	<div class="flex-container">
+		<div class="leftcolumn">
+			<div class="header">
+				<a class = "biglink" rel= "noopener" href = "../index.html">kirstu</a>
+				<p class="nomargin"><strong>makes games!</strong></p>
+			</div>
+			
+			<img class="selfpic" src = "../image/sMe.jpg" alt = "A picture of me">
+			
+			<div>
+				<p>I'm Kristian Kallio, game designer who loves everything indie.
+				Crunchy effects and games that feel great to play in the moment are my jam!
+				</p>
+			</div>
+			
+			<div class="visibledesktop sticky">	
+				<li><a href="../me.html">bio</a></li>
+				<li><a href="../index.html">portfolio</a></li>
+				<li><a href="../writing.html">blog</a></li>
+				
+				<br><br>
+				
+				<li><a rel="noopener" target="_blank" href="https://twitter.com/Kirstu__">twitter</a></li>
+				<li><a rel="noopener" target="_blank" href="https://www.linkedin.com/in/kirstu/">linkedin</a></li>
+				<li><a rel="noopener" target="_blank" href="https://kirstu.itch.io/">itch</a></li>
+				<li><a href="mailto:kirstu.kallio@outlook.com">contact</a></li>
+			</div>
+		</div>
+		
+		<div class="rightcolumn">
+			<div class="content">
+				<div class="header">
+					<a class="biglink" rel= "noopener" href = "../games/coc.html">my time at resistance</a>
+				</div>
+				
+				<p>I joined Resistance Games as a part of my studies, as an intern. Company of Crime was at an alpha stage at that time.
+				I was brought in to create content for the game, as the other designers were busy with either narrative or systems design for the strategy side.
+				For the first week, it was pretty much just me reading all the documentation and getting into grips with UE's workflow. That, and the inhouse level editor.</p>
 
-<div class = "grid-container">
-  <div class = "header">
-  <h1>Company of Crime</h1>
-  </div>
-  
-	<div class = "left">
-		<div class = "link-grid-container">
-			<div class = "link-grid-item"><a href = "../me.html">Bio</a></div>
-			<div class = "link-grid-item"><a href = "../portfolio.html">Portfolio</a></div>
-			<div class = "link-grid-item"><a href = "../writing.html">Blog</a></div> 
+				<p>After the initial shock of being thrust into a larger production with minimal intro, I started to actually produce content, slowly but surely.
+				While I have experience playing both strategy and tactics games, I've never delved more in-depth into their design as I have with other genres. It was quite the daunting
+				task to start producing content for the actual game with what felt like minimal experience.</p>
+				
+				<p>My first levels were far from pretty, functional maybe, but pretty much barely so. They all had to be reworked later, which was to be expected of course.
+				It felt pretty great later to be able to analyze my older levels in more detail, noticing ways to make levels flow better, fixing technical aspect and even to prettying the levels up a bit better.
+				My whole journey as a level designer for a tactics game was like riding the Dunning-Kruger rollercoaster. Even if I had learned quite a lot and improved my older levels significantly, 
+				I didn't really know how skilled I was. I still don't really know. If nothing else, my work seemed to be satisfactory in the other designers' eyes, as very few levels bounced back from review.
+				In retrospect, I'm pretty happy with how few levels overall needed to be reworked in a larger scale. Most only received a couple additional gameplay passes.</p>
+				
+				<p>In regard to the team and workplace, I was really happy about, well, everything really. Everybody at the office were great, I was never afraid of asking questions,
+				I felt free to take breaks when I needed to, and of course there was an unbound flow of coffee. Very rarely have I gotten a chance to work in such a friendly environment.</p>
+				
+				<p>Overall, my intership went great there. It felt great to be a part of a larger team, finally working on a bigger project with an actual budget and publisher.
+				I'm happy with the quality and quantity of my work. I ended up making about 70-80 levels for the game in total, and I'm proud of almost every single one.
+				We unfortunately didn't have that much time for testing, so I'll probably have to wait for launch to hear more indepth comments about the level design. Excited for that.</p>
+				
+				<p>Maybe post launch I'll do a short walkthrough of the level creation process, provided I get the permission from the dev team. That'd be fun to write.</p>
+			</div>
 		</div>
 	</div>
 	
-	<div class = "middle">
+	<script>
+		function toggleMenu() {
+			var x = document.getElementById("links");
+			
+			if (x.style.display === "block") 	{x.style.display = "none";}
+			else 								{x.style.display = "block";}
+		}
 		
-		<p>I joined Resistance Games as a part of my studies, as an intern. Company of Crime was at an alpha stage at that time.
-		I was brought in to create content for the game, as the other designers were busy with either narrative or systems design for the strategy side.
-		For the first week, it was pretty much just me reading all the documentation and getting into grips with UE's workflow. That, and the inhouse level editor.</p>
-
-		<p>After the initial shock of being thrust into a larger production with minimal intro, I started to actually produce content, slowly but surely.
-		While I have experience playing both strategy and tactics games, I've never delved more in-depth into their design as I have with other genres. It was quite the daunting
-		task to start producing content for the actual game with what felt like minimal experience.</p>
+		function swapStyleSheet(sheet)
+			{document.getElementById('pagestyle').setAttribute('href', sheet);}
 		
-		<p>My first levels were far from pretty, functional maybe, but pretty much barely so. They all had to be reworked later, which was to be expected of course.
-		It felt pretty great later to be able to analyze my older levels in more detail, noticing ways to make levels flow better, fixing technical aspect and even to prettying the levels up a bit better.
-		My whole journey as a level designer for a tactics game was like riding the Dunning-Kruger rollercoaster. Even if I had learned quite a lot and improved my older levels significantly, 
-		I didn't really know how skilled I was. I still don't really know. If nothing else, my work seemed to be satisfactory in the other designers' eyes, as very few levels bounced back from review.
-		In retrospect, I'm pretty happy with how few levels overall needed to be reworked in a larger scale. Most only received a couple additional gameplay passes.</p>
-		
-		<p>In regard to the team and workplace, I was really happy about, well, everything really. Everybody at the office were great, I was never afraid of asking questions,
-		I felt free to take breaks when I needed to, and of course there was an unbound flow of coffee. Very rarely have I gotten a chance to work in such a friendly environment.</p>
-		
-		<p>Overall, my intership went great there. It felt great to be a part of a larger team, finally working on a bigger project with an actual budget and publisher.
-		I'm happy with the quality and quantity of my work. I ended up making about 70-80 levels for the game in total, and I'm proud of almost every single one.
-		We unfortunately didn't have that much time for testing, so I'll probably have to wait for launch to hear more indepth comments about the level design. Excited for that.</p>
-		
-		<p>Maybe post launch I'll do a short walkthrough of the level creation process, provided I get the permission from the dev team. That'd be fun to write.</p>
-
-		<div class = "article-grid-container">
-			<div class = "article-grid-text"></div>
-		</div>
-	</div>
-	
-	<div class = "bottom">
-		<nav>
-			<a href = "https://twitter.com/Kirstu__" class = "alt"><img src="../image/sTwitter.png" alt="Twitter" style="width:42px;height:42px;"></a>
-			<a href = "https://www.linkedin.com/in/kirstu/" class = "alt"><img src="../image/sLinkedIn.png" alt="LinkedIn" style="width:42px;height:42px;"></a></a>
-			<a href = "https://kirstu.itch.io/" class = "alt"><img src="../image/sItch.png" alt="Itch" style="width:42px;height:42px;"></a></a>
-		</nav>
-	</div>
-
-</div>
-
-<footer>
-	Hosting provided by GitHub.
-</footer>
-
+		window.addEventListener("load", function() {
+			var isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
+			if (isMobile) {swapStyleSheet('../mobilestyle.css')};
+		});
+	</script>
+</body>
 </html>

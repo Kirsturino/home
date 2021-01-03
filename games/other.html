@@ -1,81 +1,127 @@
-
 <!DOCTYPE html>
 <html>
-<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"> 
 <link rel="shortcut icon" href="../favicon.ico"/>
 <head>
-<title>Misc. Projects</title>
-<link rel = "stylesheet" href = "../style.css">
+	<title>Kirstu</title>
+	<link id="pagestyle" rel="stylesheet" type="text/css" href="../style.css">
 </head>
-
-<div class = "grid-container">
-  <div class = "header">
-    <h1>Other Games</h1>
-  </div>
-  
-	<div class = "left">
-		<div class = "link-grid-container">
-			<div class = "link-grid-item"><a href = "../me.html">Bio</a></div>
-			<div class = "link-grid-item"><a href = "../portfolio.html">Portfolio</a></div>
-			<div class = "link-grid-item"><a href = "../writing.html">Blog</a></div> 
+<body>
+	<div id="topnav">
+	  <a href="../index.html" class="active">kirstu</a>
+	  <div id="links">
+		<a href="../me.html">bio</a>
+		<a href="../index.html">portfolio</a>
+		<a href="../writing.html">blog</a>
+	  </div>
+	  
+	  <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+		<i class="fa fa-bars"></i>
+	  </a>
+	</div>
+	
+	<div class="flex-container">
+		<div class="leftcolumn">
+			<div class="header">
+				<a class = "biglink" rel= "noopener" href = "../index.html">kirstu</a>
+				<p class="nomargin"><strong>makes games!</strong></p>
+			</div>
+			
+			<img class="selfpic" src = "../image/sMe.jpg" alt = "A picture of me">
+			
+			<div>
+				<p>I'm Kristian Kallio, game designer who loves everything indie.
+				Crunchy effects and games that feel great to play in the moment are my jam!
+				</p>
+			</div>
+			
+			<div class="visibledesktop sticky">	
+				<li><a href="../me.html">bio</a></li>
+				<li><a href="../index.html">portfolio</a></li>
+				<li><a href="../writing.html">blog</a></li>
+				
+				<br><br>
+				
+				<li><a rel="noopener" target="_blank" href="https://twitter.com/Kirstu__">twitter</a></li>
+				<li><a rel="noopener" target="_blank" href="https://www.linkedin.com/in/kirstu/">linkedin</a></li>
+				<li><a rel="noopener" target="_blank" href="https://kirstu.itch.io/">itch</a></li>
+				<li><a href="mailto:kirstu.kallio@outlook.com">contact</a></li>
+			</div>
+		</div>
+		
+		<div class="rightcolumn">
+			<div class="content">			
+				<h2>A Narratively Driven Moon Game (2019)</h2>
+		
+				<img src = "../image/sSelenePromo2.jpg" alt = "Selene">
+				<img src = "../image/sSelenePromo.jpg" alt = "Selene">
+				
+				<p>In Selene you crashland on the surface of the moon, only to find an abandoned moon base. You set out to find out what happened. It was an experiment on developing a narratively driven game where the main goals were meaningful exploration, environmental storytelling and light puzzle elements.</p>
+				
+				<iframe src="https://www.youtube.com/embed/WQzRONCU8gE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			
+			<div class="content">
+				<h2>An Arcade Christmas Game (2018)</h2>
+				
+				<img src = "../image/sSanta.png" alt = "Santa's Calendar Gift Throw App Icon">
+				
+				<p><a class = "plain" target="_blank" rel= "noopener" href = "https://play.google.com/store/apps/details?id=com.TeamGrapplingHook.XmasGiftDelivery&hl=en_UShttps://play.google.com/store/apps/details?id=com.TeamGrapplingHook.XmasGiftDelivery&hl=en_US">Santa's Calendar Gift Throw</a> is a game made in a really short amount of time. It's also a mobile game made in Unreal due to course specifications. At this point no one in our team had really used Unreal, so conditions were far from ideal.</p>
+				
+				<p>The main gimmick behind the game is that it follows the advent calendar. The changes vary from unlocking new gameplay features as well as numerous cosmetic overhauls. Most of the work in this project involved making the unlock system and learning Unreal in general.</p>
+				<iframe src="https://www.youtube.com/embed/XeAfRlIk88g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			
+			<div class="content">
+				<h2>First Solo Project (2018)</h2>
+				
+				<img src = "../image/sSubSonar.png" alt = "Sub Sonar Capsule Image">
+				<p><a class = "plain" target="_blank" rel= "noopener" href = "https://kirstu.itch.io/sub-sonar">Sub Sonar</a> is a global game jam game turned into a personal project. It's a randomly generated, slow paced, audio driven exploration game where you scan the deep sea looking for treasure.</p> 
+					
+				<p>The theme for the jam was transmission and quickly we decided to make a radar mechanic where you could only see things as visual representations in your radar. I was just learning programming at the time, but I'm very happy with the results. The jam game was nice, but the real gratification came from taking it, polishing it every now and then for a couple months and finally releasing it. There were still a lot of features I wanted to add, but decided against it. I'm glad I did!</p>
+			</div>
+			
+			<div class="content">
+				<h2>A Local Co-Op Management Game (2017)</h2>
+				<iframe src="https://www.youtube.com/embed/X1AuqSNsN2Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+				<p>Fantastic Train is a local co-op game where you and your friend get to experience the fantasy of owning a steam train. It's basically a roguelite panic management game with fantastical themes. The idea was in my opinion really, really good, but we ended up trying to make too many different management mechanics. </p>
+				
+				<p>It was the first project I ever did that had any meaningful dev time. I'm really happy with how it turned out in the end. It was definitely overscoped, but otherwise production ran pretty well. I was the producer in the project as well as the sound designer. All of the music excluding the DnB version of the main theme are done by me as well!</p>
+			</div>
+			
+			<div class="content">	
+				<h2>A Musical Chair Game (2017)</h2>
+				
+				<iframe src="https://www.youtube.com/embed/hMwxSb2FZ0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+				<p>Muake is musical chairs combined with Quake movement mechanics. It was my very first project made in a team. We had pretty much zero development time, so of course we set out to make a game with online multiplayer (yeah, I know). It ended up kinda working in a LAN environment, but ultimately never got fully made.</p>				
+			</div>
+			
+			<div class="content">	
+				<h2>Analyses</h2>
+				
+				<p>I don't usually do formal analyses of games, but I did a few as a part of a design course. My favourite analysis was that of the game <a target="_blank" rel= "noopener" class = "plain" href = "https://qwertyprophecy.itch.io/storyseeker">Storyseeker.</a> You can find it <a class = "plain" target="_blank" rel= "noopener" href = "https://docs.google.com/document/d/1hMSYYoS504ZMeQUhfs1HOOyQZ-Ls2vE1jQN7PsFj_78/edit?usp=sharing">here.</a> You really should play the game first, though!</p>
+			</div>
 		</div>
 	</div>
 	
-	<div class = "middle">
-	
-		<h2>A Narratively Driven Moon Game (2019)</h2>
+	<script>
+		function toggleMenu() {
+			var x = document.getElementById("links");
+			
+			if (x.style.display === "block") 	{x.style.display = "none";}
+			else 								{x.style.display = "block";}
+		}
 		
-		<p>In Selene you crashland on the surface of the moon, only to find an abandoned moon base. You set out to find out what happened. It was an experiment on developing a narratively driven game where the main goals were meaningful exploration, environmental storytelling and light puzzle elements.</p>
+		function swapStyleSheet(sheet)
+			{document.getElementById('pagestyle').setAttribute('href', sheet);}
 		
-		<img src = "../image/sSelenePromo2.jpg" alt = "Selene" style = "max-width: 400px;">
-		<img src = "../image/sSelenePromo.jpg" alt = "Selene" style = "max-width: 400px;">
-		
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/WQzRONCU8gE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		
-		<h2>An Arcade Christmas Game (2018)</h2>
-		
-		<img src = "../image/sSanta.png" alt = "Santa's Calendar Gift Throw App Icon" style = "max-width: 400px;">
-		
-		<p><a class = "normal" target="_blank" rel= "noopener" href = "https://play.google.com/store/apps/details?id=com.TeamGrapplingHook.XmasGiftDelivery&hl=en_UShttps://play.google.com/store/apps/details?id=com.TeamGrapplingHook.XmasGiftDelivery&hl=en_US">Santa's Calendar Gift Throw</a> is a game made in a really short amount of time. It's also a mobile game made in Unreal due to course specifications. At this point no one in our team had really used Unreal, so conditions were far from ideal.</p>
-		
-		<p>The main gimmick behind the game is that it follows the advent calendar. The changes vary from unlocking new gameplay features as well as numerous cosmetic overhauls. Most of the work in this project involved making the unlock system and learning Unreal in general.</p>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/XeAfRlIk88g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	
-		<h2>A Local Co-Op Management Game (2017)</h2>
-	
-		<p>Fantastic Train is a local co-op game where you and your friend get to experience the fantasy of owning a steam train. It's basically a roguelite panic management game with fantastical themes. The idea was in my opinion really, really good, but we ended up trying to make too many different management mechanics. </p>
-		
-		<p>It was the first project I ever did that had any meaningful dev time. I'm really happy with how it turned out in the end. It was definitely overscoped, but otherwise production ran pretty well. I was the producer in the project as well as the sound designer. All of the music excluding the DnB version of the main theme are done by me as well!</p>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/X1AuqSNsN2Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		
-		<h2>A Musical Chair Game (2017)</h2>
-		
-		<p>Muake is musical chairs combined with Quake movement mechanics. It was my very first project made in a team. We had pretty much zero development time, so of course we set out to make a game with online multiplayer (yeah, I know). It ended up kinda working in a LAN environment, but ultimately never got fully made.</p>
-		
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/hMwxSb2FZ0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		
-		<h2>Analyses</h2>
-		
-		<p>I don't usually do formal analyses of games, but I did a few as a part of a design course. My favourite analysis was that of the game <a target="_blank" rel= "noopener" class = "normal" href = "https://qwertyprophecy.itch.io/storyseeker">Storyseeker.</a> You can find it <a class = "normal" target="_blank" rel= "noopener" href = "https://docs.google.com/document/d/1hMSYYoS504ZMeQUhfs1HOOyQZ-Ls2vE1jQN7PsFj_78/edit?usp=sharing">here.</a> You really should play the game first, though!</p>
-	
-		<div class = "article-grid-container">
-			<div class = "article-grid-text"></div>
-		</div>
-	</div>
-	
-	<div class = "bottom">
-		<nav>
-			<a href = "https://twitter.com/Kirstu__" class = "alt"><img src="../image/sTwitter.png" alt="Twitter" style="width:42px;height:42px;"></a>
-			<a href = "https://www.linkedin.com/in/kirstu/" class = "alt"><img src="../image/sLinkedIn.png" alt="LinkedIn" style="width:42px;height:42px;"></a></a>
-			<a href = "https://kirstu.itch.io/" class = "alt"><img src="../image/sItch.png" alt="Itch" style="width:42px;height:42px;"></a></a>
-		</nav>
-	</div>
-
-</div>
-
-<footer>
-	Hosting provided by GitHub.
-</footer>
-
+		window.addEventListener("load", function() {
+			var isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
+			if (isMobile) {swapStyleSheet('../mobilestyle.css')};
+		});
+	</script>
+</body>
 </html>

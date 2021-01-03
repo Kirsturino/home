@@ -1,48 +1,215 @@
-
 <!DOCTYPE html>
 <html>
-<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"> 
 <link rel="shortcut icon" href="favicon.ico"/>
 <head>
-<title>Kristian Kallio</title>
-<link rel = "stylesheet" href = "style.css">
+	<title>Kirstu</title>
+	<link id="pagestyle" rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
-
-<header>
-
-	<h1>
-		Kristian Kallio
-	</h1>
+	<div id="topnav">
+	  <a href="#home" class="active">kirstu</a>
+	  <div id="links">
+		<a href="me.html">bio</a>
+		<a href="index.html">portfolio</a>
+		<a href="writing.html">blog</a>
+	  </div>
+	  
+	  <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+		<i class="fa fa-bars"></i>
+	  </a>
+	</div>
 	
-	<h2>
-		Game Developer
-	</h2>
+	<div class="flex-container">
+		<div class="leftcolumn">
+			<div class="header">
+				<a class = "biglink" rel= "noopener" href = "index.html">kirstu</a>
+				<p class="nomargin"><strong>makes games!</strong></p>
+			</div>
+			
+			<img class="selfpic" src = "image/sMe.jpg" alt = "A picture of me">
+			
+			<div>
+				<p>I'm Kristian Kallio, game designer who loves everything indie.
+				Crunchy effects and games that feel great to play in the moment are my jam!
+				</p>
+			</div>
+			
+			<div class="visibledesktop sticky">	
+				<li><a href="me.html">bio</a></li>
+				<li><a href="index.html">portfolio</a></li>
+				<li><a href="writing.html">blog</a></li>
+				
+				<br><br>
+				
+				<li><a rel="noopener" target="_blank" href="https://twitter.com/Kirstu__">twitter</a></li>
+				<li><a rel="noopener" target="_blank" href="https://www.linkedin.com/in/kirstu/">linkedin</a></li>
+				<li><a rel="noopener" target="_blank" href="https://kirstu.itch.io/">itch</a></li>
+				<li><a href="mailto:kirstu.kallio@outlook.com">contact</a></li>
+			</div>
+		</div>
+		
+		<div class="rightcolumn">
+			<div class="content">
+				<div class="header">
+					<a class="biglink" rel= "noopener" href = "games/proficiencies.html">proficiencies</a>
+				</div>
+
+				<p>Here I detail my skillset as a developer and tell more about my outlook on working. Also a compilation of my past positions and associations.</p> 
+				<div class="readmore"><a href="games/proficiencies.html">read more...</a></div>
+			</div>
+			
+			<div class="content">
+				<div class="header">
+					<a class="biglink" target="_blank" rel= "noopener" href = "https://kirstu.itch.io/chucksaw">chucksaw</a>
+				</div>
+				
+				<img src = "image/gChucksaw.gif" alt = "Chucksaw gameplay gif">
+				<p><a class ="plain" target="_blank" rel= "noopener" href = "https://kirstu.itch.io/chucksaw">Chucksaw (2020)</a>
+				is a juice fest of a party game made to illustrate how much effects can accentuate very simple actions. 
+				Quick and snappy visuals combined with crunchy 8-bit sound effects make every input feel instantly gratifying.</p> 
+				
+				<p>Chucksaw was developed in just two weeks in an experiment to develop a very simple gameplay idea 
+				that was then polished to the extreme. You can totally wreck friendships in this game.</p>
+				<div class="readmore"><a href="games/chucksaw.html">read more...</a></div>
+			</div>
+			
+			<div class="content">
+				<div class="header">
+					<a class="biglink" target="_blank" rel= "noopener" href = "https://kirstu.itch.io/ocda">ocda</a>
+				</div>
+				
+				<img src = "image/gOCDA.gif" alt = "OCDA gameplay gif">
+				<p><a class = "plain" target="_blank" rel= "noopener" href = "https://kirstu.itch.io/ocda">OCDA (2020)</a>  
+				is a platformer made for my thesis that illustrates various ways to implement good game feel, juice and oil. 
+				This includes various aspects such as considerate level design, input buffering, edge shaving and much more! 
+				You'll never miss a jump due to jank in this game.</p> 
+				
+				<p>I spent a few months working on it during my own time in the evenings after work. The end result is a precision platformer filled to the brim
+				with secrets and collectibles to find.</p>
+				<div class="readmore"><a href="games/ocda.html">read more...</a></div>
+			</div>
+			
+			<div class="content">
+				<div class="header">
+					<a class="biglink" target="_blank" rel= "noopener" href = "https://store.steampowered.com/app/1229420/Company_of_Crime/">company of crime</a>
+				</div>
+				
+				<img src = "image/sCoC.jpg" alt = "Company of Crime capsule image">
+				
+				<p><a class = "plain" target="_blank" rel= "noopener" href = "https://store.steampowered.com/app/1229420/Company_of_Crime/">Company of Crime (2020)</a>  places you in the heart of 1960s London. 
+				Will you build an influential criminal empire, or head up an elite Scotland Yard task force and crack down on the rising tide of corruption? 
+				Chase out targets, then dive into the melee with your hand-picked team of gangsters or detectives.</p> 
+				
+				<p>I worked as the level designer, joining the production in the alpha stages. 
+				It's the biggest production I've been a part of so far and I'm really proud of the work I did there. 
+				It was overall just a very positive experience to work there.</p>
+				
+				<div class="readmore"><a href="games/coc.html">read more...</a></div>
+			</div>
+			
+			<div class="content">
+				<div class="header">
+					<a class="biglink" target="_blank" rel= "noopener" href ="https://store.steampowered.com/app/1236190/Korpus_Buried_over_the_Black_Soil/">korpus: buried under the soil</a>
+				</div>
+				
+				<img src = "image/sKorpus.jpg" alt = "Korpus: Buried Under the Black Soil capsule image">
 	
-</header>
-
-<div class = "link-grid-container">
-	<div class = "link-grid-item"><a href = "me.html">Bio</a></div>
-	<div class = "link-grid-item"><a href = "portfolio.html">Portfolio</a></div>
-	<div class = "link-grid-item"><a href = "writing.html">Blog</a></div> 
-</div>
-
-<img src = "image/sKirstu.png" class = "center-image" alt = "Kirstu" style = "width: 150px; height: 150px; text-align: center;">
-
-<div class = "bottom">
-	<nav>
-		<a href = "https://twitter.com/Kirstu__" class = "alt"><img src="image/sTwitter.png" alt="Twitter" style="width:42px;height:42px;"></a>
-		<a href = "https://www.linkedin.com/in/kirstu/" class = "alt"><img src="image/sLinkedIn.png" alt="LinkedIn" style="width:42px;height:42px;"></a></a>
-		<a href = "https://kirstu.itch.io/" class = "alt"><img src="image/sItch.png" alt="Itch" style="width:42px;height:42px;"></a></a>
-	</nav>
-</div>
-
-<footer>
-	Hosting provided by GitHub.
-</footer>
-
+				<p><a class = "plain" target="_blank" rel= "noopener" href = "https://store.steampowered.com/app/1236190/Korpus_Buried_over_the_Black_Soil/">Korpus: Buried Over The Black Soil (2019)</a> 
+				is a psychological horror game inspired by some of the greats in the PS1 era. What you learn becomes reality in this one.</p>
+				
+				<p>I joined in as the producer in alpha, later also working in the design field, level design in particular. A vicious content cut made in early alpha ended up making Korpus a viable commercial release instead of a demo.</p>
+				
+				<div class="readmore"><a href="games/korpus.html">read more...</a></div>
+			</div>
+			
+			<div class="content">
+				<div class="header">
+					<a class="biglink" target="_blank" rel= "noopener" href ="https://store.steampowered.com/app/1193950/Dashbot_Ninja/">dashbot ninja</a>
+				</div>
+				
+				<img src = "image/sNinja.png" alt ="Dashbot Ninja app image">
+				
+				<p><a class = "plain" target="_blank" rel= "noopener" href ="https://store.steampowered.com/app/1193950/Dashbot_Ninja/">Dashbot Ninja (2019)</a> is a fast paced Android game (now only available on PC) where you dash through the office buildings of evil corporates
+				while slicing through their robotic henchmen.</p>
+				
+				<p>This project was a bit different as we only had 3 people in the team in total. Due to the conditions, 
+				I mainly worked as an artist, creating the character art and animations, level tilesets, UI and FX. 
+				I also made some SFX and music in this one!</p>
+				
+				<p>It was a great opportunity to see things from a different perspective 
+				in a more commercial project instead of a jam game.</p>
+				
+				<div class="readmore"><a href="games/ninja.html">read more...</a></div>
+			</div>
+			
+			<div class="content">
+				<div class="header">
+					<a class="biglink" target="_blank" rel= "noopener" href ="https://store.steampowered.com/app/920580">tanks with hands</a>
+				</div>
+				
+				<img src = "image/sTanks.jpg" alt = "Tanks With Hands capsule image">
+	
+				<p><a class = "plain" target="_blank" rel= "noopener" href = "https://store.steampowered.com/app/920580">Tanks With Hands: Armed And Treaded (2018)</a> is a local multiplayer party brawler for PC 
+				with some pretty whacky physics-based mechanics. Also the characters have tank bodies for legs. It won the Hatch competition of best party game at Assembly 2018!</p> 
+				
+				<p>This was my first project as a designer for a commercial release.
+				I was the only designer in the team, so I got to learn a bunch about all sorts of design. 
+				After systems design, most of the work done was centered around level design.</p> 
+				
+				<div class="readmore"><a href="games/tanks.html">read more...</a></div>
+			</div>
+			
+			<div class="content">
+				<div class="header">
+					<a class="biglink" target="_blank" rel= "noopener" href ="https://www.northerngamesummit.com">Northern Game Summit</a>
+				</div>
+				
+				<img src = "image/sNGS.png" alt = "Northern Game Summit Logo">
+	
+				<p><a class = "plain" target="_blank" rel= "noopener" href = "https://www.northerngamesummit.org">Northern Game Summit (2018)</a> is one of the biggest game conferences in Finland held yearly in Kajaani. In 2018 we had speakers from 
+				Blizzard, Santa Monica, Remedy, Guerrilla, CD Projekt Red and more!</p>
+				
+				<p>I was the Speaker Manager for the event in 2018, 
+				being in charge of recruiting speakers for the event as well as organizing travels and accommodation. During the event my task 
+				was to make sure we were running in schedule.</p>
+				
+				<p>Being a major part in organizing this event was probably the most difficult thing I've done to date, 
+				but it was also incredibly satisfying to see all my hard work and sleepless nights pay off and culminating 
+				in the best games conference in Finland. *cough cough*</p>
+				
+				<div class="readmore"><a href="games/ngs.html">read more...</a></div>
+			</div>
+			
+			<div class="content">
+				<div class="header">
+					<a class="biglink" target="_blank" rel= "noopener" href ="games/other.html">other stuff</a>
+				</div>
+	
+				<p>A compilation of other work that don't have enough going to get their own pages.</p>
+				
+				<div class="readmore"><a href="games/other.html">read more...</a></div>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+		function toggleMenu() {
+			var x = document.getElementById("links");
+			
+			if (x.style.display === "block") 	{x.style.display = "none";}
+			else 								{x.style.display = "block";}
+		}
+		
+		function swapStyleSheet(sheet)
+			{document.getElementById('pagestyle').setAttribute('href', sheet);}
+		
+		window.addEventListener("load", function() {
+			var isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
+			if (isMobile) {swapStyleSheet('mobilestyle.css')};
+		});
+	</script>
 </body>
-
 </html>

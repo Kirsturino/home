@@ -1,97 +1,131 @@
-
 <!DOCTYPE html>
 <html>
-<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"> 
 <link rel="shortcut icon" href="../favicon.ico"/>
 <head>
-<title>Business</title>
-<link rel = "stylesheet" href = "../style.css">
+	<title>Kirstu</title>
+	<link id="pagestyle" rel="stylesheet" type="text/css" href="../style.css">
 </head>
-
-<div class = "grid-container">
-  <div class = "header">
-    <h1>Work & I</h1>
-  </div>
-  
-	<div class = "left">
-		<div class = "link-grid-container">
-			<div class = "link-grid-item"><a href = "../me.html">Bio</a></div>
-			<div class = "link-grid-item"><a href = "../portfolio.html">Portfolio</a></div>
-			<div class = "link-grid-item"><a href = "../writing.html">Blog</a></div> 
+<body>
+	<div id="topnav">
+	  <a href="../index.html" class="active">kirstu</a>
+	  <div id="links">
+		<a href="../me.html">bio</a>
+		<a href="../index.html">portfolio</a>
+		<a href="../writing.html">blog</a>
+	  </div>
+	  
+	  <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+		<i class="fa fa-bars"></i>
+	  </a>
+	</div>
+	
+	<div class="flex-container">
+		<div class="leftcolumn">
+			<div class="header">
+				<a class = "biglink" rel= "noopener" href = "../index.html">kirstu</a>
+				<p class="nomargin"><strong>makes games!</strong></p>
+			</div>
+			
+			<img class="selfpic" src = "../image/sMe.jpg" alt = "A picture of me">
+			
+			<div>
+				<p>I'm Kristian Kallio, game designer who loves everything indie.
+				Crunchy effects and games that feel great to play in the moment are my jam!
+				</p>
+			</div>
+			
+			<div class="visibledesktop sticky">	
+				<li><a href="../me.html">bio</a></li>
+				<li><a href="../index.html">portfolio</a></li>
+				<li><a href="../writing.html">blog</a></li>
+				
+				<br><br>
+				
+				<li><a rel="noopener" target="_blank" href="https://twitter.com/Kirstu__">twitter</a></li>
+				<li><a rel="noopener" target="_blank" href="https://www.linkedin.com/in/kirstu/">linkedin</a></li>
+				<li><a rel="noopener" target="_blank" href="https://kirstu.itch.io/">itch</a></li>
+				<li><a href="mailto:kirstu.kallio@outlook.com">contact</a></li>
+			</div>
+		</div>
+		
+		<div class="rightcolumn">
+			<div class="content">
+				<div class="header">
+					<a class="biglink" rel= "noopener" href = "../games/proficiencies.html">my experience</a>
+				</div>
+				<p>My formal education in Kajaani University of Applied Sciences is that of a producer, but I am mainly interested in game design and have taken every opportunity to learn it.</p>
+	
+				<p>As a designer, I am most interested in action gameplay systems. I like to establish clear and solid second-to-second gameplay loops first and foremost. My other passion lies in digging deep into mechanical systems and finding out what makes them tick. Things like delving deep into the stats and rules of Dark Souls or Destiny are where I sink most of my time when playing games. It's not unusual to find myself minmaxing most things in games.</p>
+			
+				<p>The thing I'm currently trying to master is  the ever elusive term game feel and juice in action games. Things like finding all the seemingly invisible factors that go into creating a system where every input feels satisfying to the player. In addition to that I've also been demystifying the term oil regarding game development and its utilities.</p>
+			
+				<p>My superpower as a developer is definitely scoping. Whether it be the entire project, a system or a subsystem. I have the ability to decide which aspect of a given thing is integral and which can be left in the wish list. As a direct result, I find the MVP document the most important when starting pre-production in a project.</p>
+			
+				<h2>Tools</h2>
+				<ul>
+					<li>HacknPlan/Jira</li>
+						<ul>
+							<li>Almost every project I've been a part of has used Kanban board functionality. In addition, I'm also used to linking the GDD with project management via Confluence or HacknPlan's game design model.</li>
+						</ul>
+					<li>MS Office</li>
+					<li>Visual Studio</li>
+						<ul>
+							<li>C#, GML, HTML, CSS</li>
+						</ul>
+					<li>Engines</li>
+						<ul>
+							<li>GameMaker Studio 2, Unity, Unreal Engine 4</li>
+						</ul>
+					<li>Machinations</li>
+					<li>Git</li>
+				</ul>
+				
+				<h2>Agile</h2>
+				<ul>
+					<li>Scrum, Kanban & Scrumban</li>
+					<ul>
+						<li>I have a over 3 years of experience with agile methodologies by now, mostly from a Scrum Master point of view. My favourite way to manage a project is Scrumban.</li>
+					</ul>
+				</ul>
+				
+				<h2>Positions</h2>
+				<ul>
+				<li>Resistance Games, Level Designer, 2020-2020</li>
+					<ul>
+						<li>I worked as a level designer, creating most of the levels for the tactics layer of the game Company of Crime.</li>
+					</ul>
+					<li>Producer/Designer Club at KUAS, Main Organizer, 2018 - 2019</li>
+						<ul>
+							<li>I was the main organizer for the club, along with two other people working with me. The club is held at KUAS and is aimed towards first-year students to aid them in their studies. We held weekly lectures about various subjects, mostly practical things that they wouldn't otherwise have no way of knowing when starting production. This includes stuff like pitching, the different roles in game production, documentation and agile. Some design lectures I held include explaining the Theory of Fun and User Experience Design.</li>
+						</ul>
+					<li>Northern Game Summit, Speaker Manager, 2017 - 2018</li>
+					<ul>
+						<li>You can read more about my responsibilities and journey with NGS <a href = "NGS.html" class = "plain">here.</a></li>
+					</ul>
+				</ul>
+				
+			</div>
 		</div>
 	</div>
 	
-	<div class = "middle">
-	
-		<p>My formal education in Kajaani University of Applied Sciences is that of a producer, but I am mainly interested in game design and have taken every opportunity to learn it.</p>
-	
-		<p>As a designer, I am most interested in action gameplay systems. I like to establish clear and solid second-to-second gameplay loops first and foremost. My other passion lies in digging deep into mechanical systems and finding out what makes them tick. Things like delving deep into the stats and rules of Dark Souls or Destiny are where I sink most of my time when playing games. It's not unusual to find myself minmaxing most things in games.</p>
-	
-		<p>The thing I'm currently trying to master is  the ever elusive term game feel and juice in action games. Things like finding all the seemingly invisible factors that go into creating a system where every input feels satisfying to the player. In addition to that I've also been demystifying the term oil regarding game development and its utilities.</p>
-	
-		<p>My superpower as a developer is definitely scoping. Whether it be the entire project, a system or a subsystem. I have the ability to decide which aspect of a given thing is integral and which can be left in the wish list. As a direct result, I find the MVP document the most important when starting pre-production in a project.</p>
-	
-		<h2>Tools</h2>
-		<ul>
-			<li>HacknPlan</li>
-				<ul>
-					<li>Almost every project I've been a part of has used HacknPlan and its Kanban board functionality. In addition, their game design model is a very handy tool for segmenting your GDD document and linking it with your project management.</li>
-				</ul>
-			<li>MS Office</li>
-			<li>Visual Studio</li>
-				<ul>
-					<li>C#, GML, HTML, CSS</li>
-				</ul>
-			<li>Engines</li>
-				<ul>
-					<li>GameMaker Studio 2, Unity, Unreal Engine 4</li>
-				</ul>
-			<li>Machinations</li>
-			<li>Git</li>
-		</ul>
+	<script>
+		function toggleMenu() {
+			var x = document.getElementById("links");
+			
+			if (x.style.display === "block") 	{x.style.display = "none";}
+			else 								{x.style.display = "block";}
+		}
 		
-		<h2>Agile</h2>
-		<ul>
-			<li>Scrum, Kanban & Scrumban</li>
-			<ul>
-				<li>I have a little over 2 years of experience with agile methodologies by now, mostly from a Scrum Master point of view. My favourite way to manage a project is Scrumban.</li>
-			</ul>
-		</ul>
+		function swapStyleSheet(sheet)
+			{document.getElementById('pagestyle').setAttribute('href', sheet);}
 		
-		<h2>Positions</h2>
-		<ul>
-		<li>Resistance Games, Level Designer, 2020-2020</li>
-			<ul>
-				<li>I worked as a level designer, creating most of the levels for the tactics layer of the game Company of Crime.</li>
-			</ul>
-			<li>Northern Game Summit, Speaker Manager, 2017 - 2018</li>
-			<ul>
-				<li>You can read more about my responsibilities and journey with NGS <a href = "NGS.html" class = "normal">here.</a></li>
-			</ul>
-			<li>Producer/Designer Club at KUAS, Main Organizer, 2018 - 2019</li>
-				<ul>
-					<li>I was the main organizer for the club, along with two other people working with me. The club is held at KUAS and is aimed towards first-year students to aid them in their studies. We held weekly lectures about various subjects, mostly practical things that they wouldn't otherwise have no way of knowing when starting production. This includes stuff like pitching, the different roles in game production, documentation and agile. Some design lectures I held include explaining the Theory of Fun and User Experience Design.</li>
-				</ul>
-		</ul>
-	
-		<div class = "article-grid-container">
-			<div class = "article-grid-text"></div>
-		</div>
-	</div>
-	
-	<div class = "bottom">
-		<nav>
-			<a href = "https://twitter.com/Kirstu__" class = "alt"><img src="../image/sTwitter.png" alt="Twitter" style="width:42px;height:42px;"></a>
-			<a href = "https://www.linkedin.com/in/kirstu/" class = "alt"><img src="../image/sLinkedIn.png" alt="LinkedIn" style="width:42px;height:42px;"></a>
-			<a href = "https://kirstu.itch.io/" class = "alt"><img src="../image/sItch.png" alt="Itch" style="width:42px;height:42px;"></a>
-		</nav>
-	</div>
-
-</div>
-
-<footer>
-	Hosting provided by GitHub.
-</footer>
-
+		window.addEventListener("load", function() {
+			var isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
+			if (isMobile) {swapStyleSheet('../mobilestyle.css')};
+		});
+	</script>
+</body>
 </html>

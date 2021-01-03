@@ -1,73 +1,106 @@
-
 <!DOCTYPE html>
 <html>
-<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"> 
 <link rel="shortcut icon" href="favicon.ico"/>
 <head>
-<title>Bio</title>
-<link rel = "stylesheet" href = "style.css">
+	<title>Kirstu</title>
+	<link id="pagestyle" rel="stylesheet" type="text/css" href="style.css">
 </head>
-
-<div class = "grid-container">
-  <div class = "header">
-    <h1>Who am I?</h1>
-  </div>
-  
-	<div class = "left">
-		<div class = "link-grid-container">
-			<div class = "link-grid-item"><a href = "me.html">Bio</a></div>
-			<div class = "link-grid-item"><a href = "portfolio.html">Portfolio</a></div>
-			<div class = "link-grid-item"><a href = "writing.html">Blog</a></div> 
+<body>
+	<div id="topnav">
+	  <a href="#home" class="active">kirstu</a>
+	  <div id="links">
+		<a href="me.html">bio</a>
+		<a href="index.html">portfolio</a>
+		<a href="writing.html">blog</a>
+	  </div>
+	  
+	  <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+		<i class="fa fa-bars"></i>
+	  </a>
+	</div>
+	
+	<div class="flex-container">
+		<div class="leftcolumn">
+			<div class="header">
+				<a class = "biglink" rel= "noopener" href = "index.html">kirstu</a>
+				<p class="nomargin"><strong>makes games!</strong></p>
+			</div>
+			
+			<img class="selfpic" src = "image/sMe.jpg" alt = "A picture of me">
+			
+			<div>
+				<p>I'm Kristian Kallio, game designer who loves everything indie.
+				Crunchy effects and games that feel great to play in the moment are my jam!
+				</p>
+			</div>
+			
+			<div class="visibledesktop sticky">	
+				<li><a href="me.html">bio</a></li>
+				<li><a href="index.html">portfolio</a></li>
+				<li><a href="writing.html">blog</a></li>
+				
+				<br><br>
+				
+				<li><a rel="noopener" target="_blank" href="https://twitter.com/Kirstu__">twitter</a></li>
+				<li><a rel="noopener" target="_blank" href="https://www.linkedin.com/in/kirstu/">linkedin</a></li>
+				<li><a rel="noopener" target="_blank" href="https://kirstu.itch.io/">itch</a></li>
+				<li><a href="mailto:kirstu.kallio@outlook.com">contact</a></li>
+			</div>
 		</div>
-	</div>
-	
-	<div class = "middle">
-	
-		<br>
-		<img src = "image/sMe.jpg" alt = "Picture of me" style = "width:30%">
-	
-		<h2>Kristian Kallio,<br> Game Producer & Designer</h2>
 		
-		<p>I'm a freshly graduated game designer and producer who loves juicy, crispy and crunchy video games. 
-		For job inquiries you can <a class = "normal" href="mailto:kirstu.kallio@outlook.com">email me.</a></p>
-		
-		<p>Born in 1997, I have been playing video games for as long as I can remember. 
-		They have been with me in inspiring creativity and curiosity towards 
-		how things work from mechanical systems all the way to understanding how us humans work as well.</p>
-		
-		<p>I pride myself on attempting to understanding every side of game development, 
-		whether it be production, design, sound, art, programming, QA, you name it. 
-		In past projects I have mainly participated as either a producer or designer, but I'm also 
-		willing to wield a drawing tablet and a pen or keyboard and Visual Studio as my weapon during development crisis.</p>
-		
-		<p>When it comes to playing games, I am very much a social gamer. My most enjoyable moments in gaming
-		are beating a tough raid for the first time or playing a heart-poundingly close match of PvP with some friends! 
-		When it comes to PvP, I'm very competetive and love climbing ranks whether it be in the Crucible in Destiny or Standard format in Hearthstone.
-		I used to play Team Fortress 2 competitively in both UGC and ETF2L leagues in the Highlander format and some of my fondest memories ever have come from those matches.</p>
-		
-		<p>I have a deep love for <a class = "normal" target="_blank" rel= "noopener" href = "https://kirstu.itch.io">game jams</a>. Most of my art and programming experiences come from physically participating at jams at KUAS.
-		Most of the time I pick a filler position to round the team or be a jack-of-all-trades type of developer. Last minute SFX and music are my specialty!</p>
+		<div class="rightcolumn">
+			<div class="content">
+				<div class="header">
+					<a class="biglink" target="_blank" rel= "noopener" href ="me.html">kristian kallio, game designer and producer</a>
+				</div>
+			
+				<p>I'm a freshly graduated game designer and producer who loves juicy, crispy and crunchy video games. 
+				For job inquiries you can <a class = "plain" href="mailto:kirstu.kallio@outlook.com">email me.</a></p>
+				
+				<p>Born in 1997, I have been playing video games for as long as I can remember. 
+				They have been with me in inspiring creativity and curiosity towards 
+				how things work from mechanical systems all the way to understanding how us humans work as well.</p>
+				
+				<p>I pride myself on attempting to understanding every side of game development, 
+				whether it be production, design, sound, art, programming, QA, you name it. 
+				In past projects I have mainly participated as either a producer or designer, but I'm also 
+				willing to wield a drawing tablet and a pen or keyboard and Visual Studio as my weapon during development crisis.</p>
+				
+				<p>When it comes to playing games, I am very much a social gamer. My most enjoyable moments in gaming
+				are beating a tough raid for the first time or playing a heart-poundingly close match of PvP with some friends! 
+				When it comes to PvP, I'm very competetive and love climbing ranks whether it be in the Crucible in Destiny or Standard format in Hearthstone.
+				I used to play Team Fortress 2 competitively in both UGC and ETF2L leagues in the Highlander format and some of my fondest memories ever have come from those matches.</p>
+				
+				<img src = "image/sMeButOnASnowboard.jpeg" alt = "Picture of me, but on a snowboard">
+				
+				<p>I have a deep love for <a class = "plain" target="_blank" rel= "noopener" href = "https://kirstu.itch.io">game jams</a>. Most of my art and programming experiences come from physically participating at jams at KUAS.
+				Most of the time I pick a filler position to round the team or be a jack-of-all-trades type of developer. Last minute SFX and music are my specialty!</p>
+			
+				<p>Outside of games, I have a strong background in team sports, mainly in soccer. 
+				Recently I have been enjoying disc golf as a healthy addition to jogging and cycling.
+				During the winter my favourite things to do are downhill skiing and snowboarding! 
+				I also love to dabble with electronic music and percussive instruments.</p>
+			</div>
+		</div>
 	
-		<p>Outside of games, I have a strong background in team sports, mainly in soccer. 
-		Recently I have been enjoying disc golf as a healthy addition to jogging and cycling.
-		During the winter my favourite things to do are downhill skiing and snowboarding! 
-		I also love to dabble with electronic music and percussive instruments.</p>
-		<img src = "image/sMeButOnASnowboard.jpeg" alt = "Picture of me, but on a snowboard" style = "width:30%">
-	</div>
-	
-	<div class = "bottom">
-		<nav>
-			<a href = "https://twitter.com/Kirstu__" class = "alt"><img src="image/sTwitter.png" alt="Twitter" style="width:42px;height:42px;"></a>
-			<a href = "https://www.linkedin.com/in/kirstu/" class = "alt"><img src="image/sLinkedIn.png" alt="LinkedIn" style="width:42px;height:42px;"></a></a>
-			<a href = "https://kirstu.itch.io/" class = "alt"><img src="image/sItch.png" alt="Itch" style="width:42px;height:42px;"></a></a>
-		</nav>
-	</div>
-
-</div>
-
-<footer>
-	Hosting provided by GitHub.
-</footer>
-
+	<script>
+		function toggleMenu() {
+			var x = document.getElementById("links");
+			
+			if (x.style.display === "block") 	{x.style.display = "none";}
+			else 								{x.style.display = "block";}
+		}
+		
+		function swapStyleSheet(sheet)
+			{document.getElementById('pagestyle').setAttribute('href', sheet);}
+		
+		window.addEventListener("load", function() {
+			var isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
+			if (isMobile) {swapStyleSheet('mobilestyle.css')};
+		});
+	</script>
+</body>
 </html>

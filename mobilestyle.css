@@ -1,0 +1,255 @@
+:root {
+	--yellow:#F4C047;
+	--orange:#F4680B;
+	--black:#0C1327;
+	--navy:#0E092F;
+	--white:#FFFDF0;
+	--purple:#5E1C5A;
+	--pink:#F45D92;
+	--green:#B9ED5E;
+	--content-trans:rgba(70,91,231,0.15);
+	--black-trans:rgba(12,19,39,0.4);
+	--grad1:rgba(27,24,83,0.5);
+	--grad2:rgba(94,28,90,0.5);
+	
+	--plainTextSize:52px;
+	--bigLinkTextSize:128px;
+	--linkTextSize:96px;
+}
+
+@font-face {
+	font-family:titleFont;
+	src:url(fonts/born2bsportyv2.ttf);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background-color:var(--black);
+	background-image:url("image/noise.png"), radial-gradient(farthest-corner at 100% 100%, var(--grad2), var(--grad1));
+	background-repeat:repeat, no-repeat;
+	background-attachment:fixed;
+	background-position:right bottom;
+	height:100%;
+	width:100%;
+}
+
+.flex-container {
+	display:flex;
+	flex-flow:column nowrap;
+	justify-content:flex-start;
+	align-items:stretch;
+	align-content:stretch;
+}
+
+.leftcolumn {
+	order:2;
+	flex:100%;
+	
+	border-right-style:none;
+	border-top: solid 12px var(--yellow);
+	margin:10px;
+	padding:10px 30px;
+	
+	background-image:none;
+	list-style-type:none;
+}
+
+.rightcolumn {
+	order:1;
+	flex:100%;
+	margin:240px 10px 0px 10px;
+}
+
+.content {
+	background-color:var(--content-trans);
+	background-image:radial-gradient(farthest-corner at 100% 0%, var(--content-trans), transparent);
+	box-shadow: 0 4px 8px 0 var(--black-trans), 0 6px 20px 0 var(--black-trans);
+	padding: 10px 30px 90px 30px;
+	margin:50px 0px;
+	overflow:auto;
+	position:relative;
+	
+	border-top: solid 12px var(--yellow);
+}
+
+.sticky {
+	position:sticky;
+	top:20px;
+}
+
+.nomargin {margin:0px;}
+
+p {
+	font-family: 'Cabin', sans-serif;
+	font-size:var(--plainTextSize);
+	color:var(--white);
+	margin-top:30px;
+	text-shadow: 0.1em 0.1em 2px var(--black);
+	line-height:1.5;
+}
+
+li {
+	font-family: 'Cabin', sans-serif;
+	font-size:var(--plainTextSize);
+	color:var(--white);
+	text-shadow:0.1em 0.1em 2px var(--black);
+	list-style-type:disk;
+}
+
+ul {
+	font-family: 'Cabin', sans-serif;
+	font-size:var(--plainTextSize);
+	color:var(--white);
+	text-shadow:0.1em 0.1em 2px var(--black);
+	margin-bottom:20px;
+}
+
+h2 {
+	font-family:titleFont;
+	font-size:82px;
+	color:var(--yellow);
+	text-shadow:0.1em 0.1em 2px var(--black);
+}
+
+.header {
+	margin:20px 0px;
+}
+
+.biglink {
+	font-family:titleFont;
+	letter-spacing:2px;
+	font-size:var(--bigLinkTextSize);
+	text-shadow:0.1em 0.1em var(--black);
+}
+
+a {
+	font-family:titleFont;
+	font-size:var(--linkTextSize);
+	text-decoration:none;
+	text-shadow: 0.1em 0.1em var(--black);
+}
+
+a:link, a:visited {
+	color:var(--yellow);
+}
+
+a:active {
+	color: var(--orange);
+}
+
+a.plain:link {
+	text-shadow: 0.1em 0.1em var(--black);
+	font-family: 'Cabin', sans-serif;
+	font-size:var(--plainTextSize);
+}
+
+.readmore {
+	text-align: right;
+	position:absolute;
+	bottom:20px;
+	right:40px;
+}
+
+li {list-style-type:none;}
+
+img, iframe {
+	border: 12px solid var(--yellow);
+	box-shadow: 0 4px 8px 0 var(--black-trans), 0 6px 20px 0 var(--black-trans);
+	width:100%;
+	height: auto;
+	
+	display:block;
+	float:none;
+	margin:0px 20px 20px 0px;
+}
+
+.selfpic {
+	float:none;
+	max-width:100%;
+}
+
+.mobilenavigation 	{display:flex;}
+.visibledevice 		{display:block;}
+.visibledesktop 	{display:none;}
+
+#topnav {
+	transition-duration: 0.1s;
+	width:100%;
+	
+	overflow: hidden;
+	position:fixed;
+	display:block;
+	top:0;
+	left:0;
+	z-index: 10000;
+}
+
+#topnav #links {display:none;}
+
+#topnav a {
+	background-color:var(--yellow);
+	border-bottom: solid 12px var(--black);
+	color:var(--black);
+	padding: 10px 10px;
+	text-decoration: none;
+	text-shadow:0px 0px transparent;
+	font-size: 128px;
+	height:164px;
+	vertical-align:middle;
+	
+	display:block;
+}
+
+#topnav a.icon {
+	background-color:var(-yellow);
+	color:var(--black);
+	text-shadow:0px 0px transparent;
+	border-left: solid 12px var(--black);
+	text-align:center;
+	width:20%;
+	
+	position:absolute;
+	display:block;
+	right:0;
+	top:0;
+}
+
+#topnav a:active {
+  background-color:var(--orange);
+}
+
+.active {
+	width:100%;
+}
+
+@media (orientation:landscape) {
+	p {font-size:26px;}
+	ul {font-size:26px;}
+	li {font-size:26px;}
+	h2 {font-size:48px;}
+	a.plain:link {font-size:26px;}
+	.biglink {font-size:64px;}
+	a {font-size:48px;}
+	
+	#topnav a {
+		font-size:64px;
+		height:96px;
+	}
+	
+	.rightcolumn {margin:120px 10px 0px 10px;}
+	
+	img, iframe {
+		max-width:50%;
+		display:block;
+		float:left;
+	}
+	
+	.selfpic {
+		max-width:50%;
+		display:inline-block;
+		float:left;
+	}
+}

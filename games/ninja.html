@@ -1,51 +1,84 @@
-
 <!DOCTYPE html>
 <html>
-<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"> 
 <link rel="shortcut icon" href="../favicon.ico"/>
 <head>
-<title>Ninjas</title>
-<link rel = "stylesheet" href = "../style.css">
+	<title>Kirstu</title>
+	<link id="pagestyle" rel="stylesheet" type="text/css" href="../style.css">
 </head>
-
-<div class = "grid-container">
-  <div class = "header">
-    <h1>Brief reflection on Dashbot Ninja</h1>
-  </div>
-  
-	<div class = "left">
-		<div class = "link-grid-container">
-			<div class = "link-grid-item"><a href = "../me.html">Bio</a></div>
-			<div class = "link-grid-item"><a href = "../portfolio.html">Portfolio</a></div>
-			<div class = "link-grid-item"><a href = "../writing.html">Blog</a></div> 
+<body>
+	<div id="topnav">
+	  <a href="../index.html" class="active">kirstu</a>
+	  <div id="links">
+		<a href="../me.html">bio</a>
+		<a href="../index.html">portfolio</a>
+		<a href="../writing.html">blog</a>
+	  </div>
+	  
+	  <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+		<i class="fa fa-bars"></i>
+	  </a>
+	</div>
+	
+	<div class="flex-container">
+		<div class="leftcolumn">
+			<div class="header">
+				<a class = "biglink" rel= "noopener" href = "../index.html">kirstu</a>
+				<p class="nomargin"><strong>makes games!</strong></p>
+			</div>
+			
+			<img class="selfpic" src = "../image/sMe.jpg" alt = "A picture of me">
+			
+			<div>
+				<p>I'm Kristian Kallio, game designer who loves everything indie.
+				Crunchy effects and games that feel great to play in the moment are my jam!
+				</p>
+			</div>
+			
+			<div class="visibledesktop sticky">	
+				<li><a href="../me.html">bio</a></li>
+				<li><a href="../index.html">portfolio</a></li>
+				<li><a href="../writing.html">blog</a></li>
+				
+				<br><br>
+				
+				<li><a rel="noopener" target="_blank" href="https://twitter.com/Kirstu__">twitter</a></li>
+				<li><a rel="noopener" target="_blank" href="https://www.linkedin.com/in/kirstu/">linkedin</a></li>
+				<li><a rel="noopener" target="_blank" href="https://kirstu.itch.io/">itch</a></li>
+				<li><a href="mailto:kirstu.kallio@outlook.com">contact</a></li>
+			</div>
+		</div>
+		
+		<div class="rightcolumn">
+			<div class="content">
+				<div class="header">
+					<a class="biglink" rel= "noopener" href = "../games/ninja.html">a different experience</a>
+				</div>
+				
+				<p>I don’t have much to say about this game other than making this was one of the most fun things I did at KUAS. Our team was a blast to work with and everyone had a great time. For me, it was a bunch of new things to try out in Unity. In previous projects I’ve seen so much of the work of graphics artists that I thankfully had the theoretical knowledge in what I should be doing at any given point in the project, especially pre-production. I just needed to put that into practice.</p>
+				<p>I got to work with Unitys tile editor and familiarized myself with the smart tile functions that Unity for some reason doesn’t offer by default. Creating a smart tile brush, randomized tiles and other stuff helped refine our workflow immensely. In addition, I never knew how versatile and powerful the animation tools in Unity were. I got to dip my toes in some programming as well, as I got to implement some of the animations and particles to our character.</p>
+				<p>Most importantly, the production side of development worked pretty flawlessly. We scoped our project very well and established a solid production pipeline very early on. I made a basic schedule and set up our project management tools and we were ready to go.  Crazy how much easier things are to work out when your team size gets cut down to one third! It was the first project where we didn’t have to think twice on any particular feature like, “I’m not sure if we can make it work properly”, things just worked, people were very, very competent at what they did and we had a solid base to work on. Of course we had more planned than what we achieved, but that’s just game development, ain’t it?</p>
+			</div>
 		</div>
 	</div>
 	
-	<div class = "middle">
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/mgh7IJByr4s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		<p>I don’t have much to say about this game other than it’s the best finished product I’ve made to date. Our team was a blast to work with and everyone had a great time. For me, it was a bunch of new things to try out in Unity. In previous projects I’ve seen so much of the work of graphics artists that I thankfully had the theoretical knowledge in what I should be doing at any given point in the project, especially pre-production. I just needed to put that into practice.</p>
-		<a href = "https://edukainuu-my.sharepoint.com/:p:/g/personal/kristiankallio_kamk_fi/EdE_17Z9a19NjFTNIJwQ3pQB4uKv7HcL-Gs7-x07WxkAsA?e=ur2cjT">Art Bible</a>
-		<p>I got to work with Unitys tile editor and familiarized myself with the smart tile functions that Unity for some reason doesn’t offer by default. Creating a smart tile brush, randomized tiles and other stuff helped refine our workflow immensely. In addition, I never knew how versatile and powerful the animation tools in Unity were. I got to dip my toes in some programming as well, as I got to implement some of the animations and particles to our character.</p>
-		<p>Most importantly, the production side of development worked pretty flawlessly. We scoped our project very well and established a solid production pipeline very early on. I made a basic schedule and set up our project management tools and we were ready to go.  Crazy how much easier things are to work out when your team size gets cut down to one third! It was the first project where we didn’t have to think twice on any particular feature like, “I’m not sure if we can make it work properly”, things just worked, people were very, very competent at what they did and we had a solid base to work on. Of course we had more planned than what we achieved, but that’s just game development, ain’t it?</p>
-	
-		<div class = "article-grid-container">
-			<div class = "article-grid-text"></div>
-		</div>
-	</div>
-	
-	<div class = "bottom">
-		<nav>
-			<a href = "https://twitter.com/Kirstu__" class = "alt"><img src="../image/sTwitter.png" alt="Twitter" style="width:42px;height:42px;"></a>
-			<a href = "https://www.linkedin.com/in/kirstu/" class = "alt"><img src="../image/sLinkedIn.png" alt="LinkedIn" style="width:42px;height:42px;"></a></a>
-			<a href = "https://kirstu.itch.io/" class = "alt"><img src="../image/sItch.png" alt="Itch" style="width:42px;height:42px;"></a></a>
-		</nav>
-	</div>
-
-</div>
-
-<footer>
-	Hosting provided by GitHub.
-</footer>
-
+	<script>
+		function toggleMenu() {
+			var x = document.getElementById("links");
+			
+			if (x.style.display === "block") 	{x.style.display = "none";}
+			else 								{x.style.display = "block";}
+		}
+		
+		function swapStyleSheet(sheet)
+			{document.getElementById('pagestyle').setAttribute('href', sheet);}
+		
+		window.addEventListener("load", function() {
+			var isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
+			if (isMobile) {swapStyleSheet('../mobilestyle.css')};
+		});
+	</script>
+</body>
 </html>

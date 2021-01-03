@@ -1,58 +1,91 @@
-
 <!DOCTYPE html>
 <html>
-<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"> 
 <link rel="shortcut icon" href="../favicon.ico"/>
 <head>
-<title>Korpus</title>
-<link rel = "stylesheet" href = "../style.css">
+	<title>Kirstu</title>
+	<link id="pagestyle" rel="stylesheet" type="text/css" href="../style.css">
 </head>
-
-<div class = "grid-container">
-  <div class = "header">
-    <h1>Korpus</h1>
-  </div>
-  
-	<div class = "left">
-		<div class = "link-grid-container">
-			<div class = "link-grid-item"><a href = "../me.html">Bio</a></div>
-			<div class = "link-grid-item"><a href = "../portfolio.html">Portfolio</a></div>
-			<div class = "link-grid-item"><a href = "../writing.html">Blog</a></div> 
+<body>
+	<div id="topnav">
+	  <a href="../index.html" class="active">kirstu</a>
+	  <div id="links">
+		<a href="../me.html">bio</a>
+		<a href="../index.html">portfolio</a>
+		<a href="../writing.html">blog</a>
+	  </div>
+	  
+	  <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+		<i class="fa fa-bars"></i>
+	  </a>
+	</div>
+	
+	<div class="flex-container">
+		<div class="leftcolumn">
+			<div class="header">
+				<a class = "biglink" rel= "noopener" href = "../index.html">kirstu</a>
+				<p class="nomargin"><strong>makes games!</strong></p>
+			</div>
+			
+			<img class="selfpic" src = "../image/sMe.jpg" alt = "A picture of me">
+			
+			<div>
+				<p>I'm Kristian Kallio, game designer who loves everything indie.
+				Crunchy effects and games that feel great to play in the moment are my jam!
+				</p>
+			</div>
+			
+			<div class="visibledesktop sticky">	
+				<li><a href="../me.html">bio</a></li>
+				<li><a href="../index.html">portfolio</a></li>
+				<li><a href="../writing.html">blog</a></li>
+				
+				<br><br>
+				
+				<li><a rel="noopener" target="_blank" href="https://twitter.com/Kirstu__">twitter</a></li>
+				<li><a rel="noopener" target="_blank" href="https://www.linkedin.com/in/kirstu/">linkedin</a></li>
+				<li><a rel="noopener" target="_blank" href="https://kirstu.itch.io/">itch</a></li>
+				<li><a href="mailto:kirstu.kallio@outlook.com">contact</a></li>
+			</div>
+		</div>
+		
+		<div class="rightcolumn">
+			<div class="content">
+				<div class="header">
+					<a class="biglink" rel= "noopener" href = "../games/korpus.html">too many hats</a>
+				</div>
+				
+				<p>An excercise on how to wear many hats, Korpus was a school project in which I transitioned from a producer to producer/designer role towards the end of the production, as we simply needed more manpower to get enough content out. I joined late in production, but had a big impact on the project.
+				As one of my first decisions, after getting told the team's schedule and plan for the rest of development, I had a discussion with the team about possible big cuts that would have to be made. We ended up cutting about half or more of the planned content in order to ship in time. 
+				After establishing plans and helping the team find a direction we were all happy to head to, I started to also help out as a designer.</p>
+				
+				<p>I worked in close tandem to the lead designer, taking a few chunks of gameplay to myself and polishing them for the remainder of the project. I also prototyped the final section of the game as my first task as a designer in the team.
+				Getting to iterate on already established level design was a very gratifying task to both test and have playtested. I really got an understanding for the importance of iteration and how much content can actually change directions in a project from initial conception.</p>
+				
+				<p>It was definitely a colossal task to try to keep the team focused while also creating content myself. Overall, I think the cohesion of the team did take a hit as a direct result of me trying to both design and produce. Was it the right decision in the end, though?
+				I don't know. I'd like to think the amount of content shipped more than made up for the slightly increased panic in production. I'd also like to think I made solid enough plans before transitioning that prevented the project from devolving into chaos.</p>
+				
+				<p>That being said, working as a producer and designer simultaneously? Never again.</p>			</div>
 		</div>
 	</div>
 	
-	<div class = "middle">
+	<script>
+		function toggleMenu() {
+			var x = document.getElementById("links");
+			
+			if (x.style.display === "block") 	{x.style.display = "none";}
+			else 								{x.style.display = "block";}
+		}
 		
-		<p>An excercise on how to wear many hats, Korpus was a school project in which I transitioned from a producer to producer/designer role towards the end of the production, as we simply needed more manpower to get enough content out. I joined late in production, but had a big impact on the project.
-		As one of my first decisions, after getting told the team's schedule and plan for the rest of development, I had a discussion with the team about possible big cuts that would have to be made. We ended up cutting about half or more of the planned content in order to ship in time. 
-		After establishing plans and helping the team find a direction we were all happy to head to, I started to also help out as a designer.</p>
+		function swapStyleSheet(sheet)
+			{document.getElementById('pagestyle').setAttribute('href', sheet);}
 		
-		<p>I worked in close tandem to the lead designer, taking a few chunks of gameplay to myself and polishing them for the remainder of the project. I also prototyped the final section of the game as my first task as a designer in the team.
-		Getting to iterate on already established level design was a very gratifying task to both test and have playtested. I really got an understanding for the importance of iteration and how much content can actually change directions in a project from initial conception.</p>
-		
-		<p>It was definitely a colossal task to try to keep the team focused while also creating content myself. Overall, I think the cohesion of the team did take a hit as a direct result of me trying to both design and produce. Was it the right decision in the end, though?
-		I don't know. I'd like to think the amount of content shipped more than made up for the slightly increased panic in production. I'd also like to think I made solid enough plans before transitioning that prevented the project from devolving into chaos.</p>
-		
-		<p>That being said, working as a producer and designer simultaneously? Never again.</p>
-		
-		<div class = "article-grid-container">
-			<div class = "article-grid-text"></div>
-		</div>
-	</div>
-	
-	<div class = "bottom">
-		<nav>
-			<a href = "https://twitter.com/Kirstu__" class = "alt"><img src="../image/sTwitter.png" alt="Twitter" style="width:42px;height:42px;"></a>
-			<a href = "https://www.linkedin.com/in/kirstu/" class = "alt"><img src="../image/sLinkedIn.png" alt="LinkedIn" style="width:42px;height:42px;"></a></a>
-			<a href = "https://kirstu.itch.io/" class = "alt"><img src="../image/sItch.png" alt="Itch" style="width:42px;height:42px;"></a></a>
-		</nav>
-	</div>
-
-</div>
-
-<footer>
-	Hosting provided by GitHub.
-</footer>
-
+		window.addEventListener("load", function() {
+			var isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
+			if (isMobile) {swapStyleSheet('../mobilestyle.css')};
+		});
+	</script>
+</body>
 </html>
